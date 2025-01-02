@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+code {
+    display: block;
+    background-color: #eaeaea;
+    padding: 10px;
+    border-left: 4px solid #333;
+    margin: 10px 0;
+}
+
+.endpoint {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.endpoint h3 {
+    margin-top: 0;
+}

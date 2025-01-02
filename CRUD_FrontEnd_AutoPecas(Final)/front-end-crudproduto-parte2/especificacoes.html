@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificações da API</title>
+    <link rel="stylesheet" href="styles/especificacao.css">
+
+</head>
+
+<body>
+    <h1><strong>Especificações da API</strong></h1>
+
+    <h2><strong>1. Retornar Dados de um Produto pelo ID</strong></h2>
+    <div class="endpoint">
+        <h3><strong>End-Point</strong></h3>
+        <p><strong>URL:</strong> <code>http://localhost:8080/produto/list/{id}</code></p>
+        <p><strong>Verbo HTTP:</strong> GET</p>
+    </div>
+    <h3><strong>Descrição</strong></h3>
+    <p>Este endpoint retorna os dados de um produto específico armazenado na base de dados, utilizando o ID fornecido na URL.</p>
+    <h3><strong>Casos de Uso</strong></h3>
+    <p><strong>Produto encontrado:</strong></p>
+    <p><strong>Código de status HTTP:</strong> 200 OK</p>
+    <code>
+        {
+            "id": 1,
+            "nome": "Produto A",
+            "descricao": "Descrição do produto A",
+            "categoria": "Categoria 1",
+            "fabricante": "Fabricante A",
+            "modelo": "Modelo X",
+            "data_fabricacao": "2023-11-10",
+            "preco": 199.99,
+            "quantidade": 20,
+            "lote": "L12345"
+        }
+    </code>
+    <p><strong>Produto não encontrado:</strong></p>
+    <p><strong>Código de status HTTP:</strong> 404 Not Found</p>
+    <code>null</code>
+
+    <h2><strong>2. Adicionar Produto</strong></h2>
+    <div class="endpoint">
+        <h3><strong>End-Point</strong></h3>
+        <p><strong>URL:</strong> <code>http://localhost:8080/produto/add</code></p>
+        <p><strong>Verbo HTTP:</strong> POST</p>
+    </div>
+    <h3><strong>Descrição</strong></h3>
+    <p>Este endpoint insere um novo produto na base de dados a partir de um objeto enviado no corpo da requisição.</p>
+    <h3><strong>Casos de Uso</strong></h3>
+    <p><strong>Produto adicionado com sucesso:</strong></p>
+    <p><strong>Código de status HTTP:</strong> 201 Created</p>
+    <code>
+        {
+            "id": 101,
+            "nome": "Novo Produto",
+            "descricao": "Descrição do novo produto",
+            "categoria": "Categoria Nova",
+            "fabricante": "Fabricante Novo",
+            "modelo": "Modelo Y",
+            "data_fabricacao": "2024-01-01",
+            "preco": 299.99,
+            "quantidade": 50,
+            "lote": "L98765"
+        }
+    </code>
+
+    <h2><strong>3. Deletar Produto</strong></h2>
+    <div class="endpoint">
+        <h3><strong>End-Point</strong></h3>
+        <p><strong>URL:</strong> <code>http://localhost:8080/produto/delete/{id}</code></p>
+        <p><strong>Verbo HTTP:</strong> DELETE</p>
+    </div>
+    <h3><strong>Descrição</strong></h3>
+    <p>Este endpoint remove um produto da base de dados com base no ID fornecido na URL.</p>
+    <h3><strong>Casos de Uso</strong></h3>
+    <p><strong>Produto deletado com sucesso:</strong></p>
+    <p><strong>Código de status HTTP:</strong> 204 No Content</p>
+    <p><strong>Produto não encontrado:</strong></p>
+    <p><strong>Código de status HTTP:</strong> 404 Not Found</p>
+    <code>null</code>
+
+    <h2><strong>4. Atualizar Produto</strong></h2>
+    <div class="endpoint">
+        <h3><strong>End-Point</strong></h3>
+        <p><strong>URL:</strong> <code>http://localhost:8080/produto/update/{id}</code></p>
+        <p><strong>Verbo HTTP:</strong> PUT</p>
+    </div>
+    <h3><strong>Descrição</strong></h3>
+    <p>Este endpoint atualiza os dados de um produto existente na base de dados utilizando o ID fornecido na URL e os novos dados enviados no corpo da requisição.</p>
+    <h3><strong>Casos de Uso</strong></h3>
+    <p><strong>Produto atualizado com sucesso:</strong></p>
+    <p><strong>Código de status HTTP:</strong> 200 OK</p>
+    <code>
+        {
+            "id": 1,
+            "nome": "Produto Atualizado",
+            "descricao": "Descrição atualizada do produto",
+            "categoria": "Categoria Atualizada",
+            "fabricante": "Fabricante Atualizado",
+            "modelo": "Modelo Z",
+            "data_fabricacao": "2023-12-01",
+            "preco": 299.99,
+            "quantidade": 40,
+            "lote": "L54321"
+        }
+    </code>
+</body>
+
+</html>
