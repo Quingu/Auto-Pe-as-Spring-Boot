@@ -1,0 +1,131 @@
+/* CSS Geral */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/* Estilo para as divs */
+.mydiv-1, .mydiv-2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.mydiv-1 {
+    color: blue;
+}
+
+.mydiv-2 {
+    color: green;
+}
+
+/* Estilo para tabela */
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+thead th, tbody td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Centralização dos dados na tabela */
+#products {
+    text-align: center;
+}
+
+/* Estilos para botões */
+.mybtnimage-1 {
+    width: 60px;
+    height: 30px;
+}
+
+/* Botão Laranja */
+#mybutton-1 {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    transition: all 250ms;
+}
+
+#mybutton-1:hover, #mybutton-1:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+#mybutton-1:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+}
+
+/* Botão Azul */
+#mybutton-2 {
+    align-items: center;
+    background-color: #0A66C2;
+    border-radius: 100px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    max-width: 480px;
+    min-height: 40px;
+    padding: 0 20px;
+    text-align: center;
+    transition: background-color 0.167s, box-shadow 0.167s, color 0.167s;
+}
+
+#mybutton-2:hover, #mybutton-2:focus {
+    background-color: #16437E;
+}
+
+#mybutton-2:active {
+    background-color: #09223b;
+}
+
+#mybutton-2:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}

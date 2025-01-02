@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App Web Consumidor API CRUD Produtos</title>
+    <link rel="stylesheet" href="styles/estilo.css">
+    <link rel="stylesheet" href="styles/listall.css">
+    <script type="text/javascript" src="scripts/script_listallproducts.js"></script>
+    <script type="text/javascript" src="scripts/script_deleteproduct.js"></script>
+    <script type="text/javascript" src="scripts/script_listbyidproducts.js"></script>
+</head>
+<body>
+    <div class="header__search">
+        <img src="images/search.png" alt="Buscar"  />
+        <label for="productId">ID do Produto:</label>
+        <input type="text" id="productId">
+        <button onclick="getProductById()">Buscar Produto</button>
+    </div>
+    <table id="products" border="1">
+        
+    </table>
+</body>
+</html>

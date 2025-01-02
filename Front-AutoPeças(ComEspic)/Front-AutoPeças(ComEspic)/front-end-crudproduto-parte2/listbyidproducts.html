@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscar Produto por ID</title>
+    <link rel="stylesheet" href="styles/estilo.css">
+    <script type="text/javascript" src="scripts/script_listbyidproducts.js"></script>
+    <script type="text/javascript" src="scripts/script_deleteproduct.js"></script>
+    
+</head>
+<body>
+    <h1>Buscar Produto por ID</h1>
+    <div>
+        <label for="productId">ID do Produto:</label>
+        <input type="text" id="productId">
+        <button onclick="getProductById()">Buscar Produto</button>
+    </div>
+
+    <!-- Mensagem de carregamento -->
+    <div id="loading" style="display: none;">Carregando...</div>
+
+    <!-- Tabela para exibir o produto -->
+    <table id="products" border="1">
+        
+    </table>
+
+</body>
+</html>

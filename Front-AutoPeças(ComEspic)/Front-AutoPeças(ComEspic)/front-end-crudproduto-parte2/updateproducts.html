@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Produto</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .formupdate div {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+            width: 40%;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 58%;
+        }
+
+        input:read-only {
+            background-color: #e9ecef;
+            color: #6c757d;
+            cursor: not-allowed;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<form class="formupdate" id="formupdate" name="formupdate">
+    <h1>Atualizar Produto</h1>
+    <div>
+        <label>ID do Produto</label>
+        <input type="number" name="id" id="id" readonly>
+    </div>
+    <div>
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome">
+    </div>
+    <div>
+        <label>Descrição</label>
+        <input type="text" name="descricao" id="descricao">
+    </div>
+    <div>
+        <label>Categoria</label>
+        <input type="text" name="categoria" id="categoria">
+    </div>
+    <div>
+        <label>Fabricante</label>
+        <input type="text" name="fabricante" id="fabricante">
+    </div>
+    <div>
+        <label>Modelo</label>
+        <input type="text" name="modelo" id="modelo">
+    </div>
+    <div>
+        <label>Data de Fabricação</label>
+        <input type="date" name="data_fabricacao" id="data_fabricacao">
+    </div>
+    <div>
+        <label>Preço</label>
+        <input type="number" name="preco" id="preco">
+    </div>
+    <div>
+        <label>Quantidade</label>
+        <input type="number" name="quantidade" id="quantidade">
+    </div>
+    <div>
+        <label>Lote</label>
+        <input type="text" name="lote" id="lote">
+    </div>
+    <div>
+        <button type="button" onclick="updateProduct()">Atualizar Produto</button>
+    </div>
+</form>
+
+<script src="scripts/script_updateproduct.js"></script>
+
+</body>
+</html>

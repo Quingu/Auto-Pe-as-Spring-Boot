@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastrar novo Produto</title>
+    <link rel="stylesheet" href="styles/estilo.css">
+    <script type="text/javascript" src="scripts/script_addproduct.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .formadd {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .formadd div {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+            width: 40%;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 58%;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<!-- O título "Cadastrar Novo Produto" foi removido -->
+
+<form class="formadd" id="formadd" name="formadd">
+    <div>
+        <label>Nome</label>
+        <input type="text" name="nome" id="nome">
+    </div>
+    <div>
+        <label>Descrição</label>
+        <input type="text" name="descricao" id="descricao">
+    </div>
+    <div>
+        <label>Categoria</label>
+        <input type="text" name="categoria" id="categoria">
+    </div>
+    <div>
+        <label>Fabricante</label>
+        <input type="text" name="fabricante" id="fabricante">
+    </div>
+    <div>
+        <label>Modelo</label>
+        <input type="text" name="modelo" id="modelo">
+    </div>
+    <div>
+        <label>Data Fabricação</label>
+        <input type="date" name="data_fabricacao" id="data_fabricacao">
+    </div>
+    <div>
+        <label>Preço</label>
+        <input type="text" name="preco" id="preco">
+    </div>
+    <div>
+        <label>Quantidade</label>
+        <input type="text" name="quantidade" id="quantidade">
+    </div>
+    <div>
+        <label>Lote</label>
+        <input type="text" name="lote" id="lote">
+    </div>
+    <div>
+        <button type="button" onclick="addProduct()">Cadastrar</button>
+    </div>
+</form>
+</body>
+</html>
